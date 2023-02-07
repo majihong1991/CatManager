@@ -1,0 +1,9 @@
+2023-02-07 20:15:15.596 [ main ] - [ INFO  ] [ com.example.demo.CatManagerApplication : 55 ] - Starting CatManagerApplication using Java 1.8.0_281 on majihong with PID 27404 (F:\code\CatManager\target\classes started by majihong in F:\code\CatManager)
+2023-02-07 20:15:15.596 [ main ] - [ INFO  ] [ com.example.demo.CatManagerApplication : 640 ] - No active profile set, falling back to 1 default profile: "default"
+2023-02-07 20:15:16.666 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 108 ] - Tomcat initialized with port(s): 8080 (http)
+2023-02-07 20:15:16.696 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2023-02-07 20:15:16.696 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-02-07 20:15:16.896 [ main ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2023-02-07 20:15:16.896 [ main ] - [ INFO  ] [ o.s.b.w.s.c.ServletWebServerApplicationContext : 290 ] - Root WebApplicationContext: initialization completed in 1240 ms
+2023-02-07 20:15:17.486 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 220 ] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-07 20:15:17.501 [ main ] - [ INFO  ] [ com.example.demo.CatManagerApplication : 61 ] - Started CatManagerApplication in 2.474 seconds (JVM running for 6.312)
