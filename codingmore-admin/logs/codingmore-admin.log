@@ -7,3 +7,126 @@
 2023-02-07 20:15:16.896 [ main ] - [ INFO  ] [ o.s.b.w.s.c.ServletWebServerApplicationContext : 290 ] - Root WebApplicationContext: initialization completed in 1240 ms
 2023-02-07 20:15:17.486 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 220 ] - Tomcat started on port(s): 8080 (http) with context path ''
 2023-02-07 20:15:17.501 [ main ] - [ INFO  ] [ com.example.demo.CatManagerApplication : 61 ] - Started CatManagerApplication in 2.474 seconds (JVM running for 6.312)
+2023-02-07 20:32:38.958 [ main ] - [ INFO  ] [ com.example.demo.CatManagerApplication : 55 ] - Starting CatManagerApplication using Java 1.8.0_281 on majihong with PID 19876 (F:\code\CatManager\target\classes started by majihong in F:\code\CatManager)
+2023-02-07 20:32:38.962 [ main ] - [ INFO  ] [ com.example.demo.CatManagerApplication : 640 ] - No active profile set, falling back to 1 default profile: "default"
+2023-02-07 20:32:39.809 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2023-02-07 20:32:40.122 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 108 ] - Tomcat initialized with port(s): 8080 (http)
+2023-02-07 20:32:40.128 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2023-02-07 20:32:40.129 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-02-07 20:32:40.311 [ main ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2023-02-07 20:32:40.312 [ main ] - [ INFO  ] [ o.s.b.w.s.c.ServletWebServerApplicationContext : 290 ] - Root WebApplicationContext: initialization completed in 1295 ms
+2023-02-07 20:32:41.009 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 220 ] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-07 20:32:41.139 [ main ] - [ INFO  ] [ com.example.demo.CatManagerApplication : 61 ] - Started CatManagerApplication in 2.74 seconds (JVM running for 3.615)
+2023-02-07 20:33:00.643 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-07 20:33:00.644 [ http-nio-8080-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 525 ] - Initializing Servlet 'dispatcherServlet'
+2023-02-07 20:33:00.645 [ http-nio-8080-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 547 ] - Completed initialization in 1 ms
+2023-02-07 20:35:32.044 [ http-nio-8080-exec-7 ] - [ ERROR ] [ o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] : 175 ] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Optional int parameter 'numb' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.] with root cause
+java.lang.IllegalStateException: Optional int parameter 'numb' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.handleNullValue(AbstractNamedValueMethodArgumentResolver.java:263)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:116)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2023-02-07 20:38:22.011 [ main ] - [ INFO  ] [ com.example.demo.CatManagerApplication : 55 ] - Starting CatManagerApplication using Java 1.8.0_281 on majihong with PID 8968 (F:\code\CatManager\target\classes started by majihong in F:\code\CatManager)
+2023-02-07 20:38:22.015 [ main ] - [ INFO  ] [ com.example.demo.CatManagerApplication : 640 ] - No active profile set, falling back to 1 default profile: "default"
+2023-02-07 20:38:22.899 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2023-02-07 20:38:23.239 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 108 ] - Tomcat initialized with port(s): 8080 (http)
+2023-02-07 20:38:23.247 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2023-02-07 20:38:23.247 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-02-07 20:38:23.375 [ main ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2023-02-07 20:38:23.376 [ main ] - [ INFO  ] [ o.s.b.w.s.c.ServletWebServerApplicationContext : 290 ] - Root WebApplicationContext: initialization completed in 1310 ms
+2023-02-07 20:38:24.145 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 220 ] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-07 20:38:24.251 [ main ] - [ INFO  ] [ com.example.demo.CatManagerApplication : 61 ] - Started CatManagerApplication in 2.789 seconds (JVM running for 3.651)
+2023-02-07 20:38:28.598 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-07 20:38:28.599 [ http-nio-8080-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 525 ] - Initializing Servlet 'dispatcherServlet'
+2023-02-07 20:38:28.600 [ http-nio-8080-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 547 ] - Completed initialization in 1 ms
+2023-02-07 20:38:28.628 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.example.demo.controller.SwaggerController : 21 ] - 输入的numb是2
+2023-02-07 20:38:36.806 [ http-nio-8080-exec-2 ] - [ INFO  ] [ com.example.demo.controller.SwaggerController : 21 ] - 输入的numb是200
+2023-02-07 20:38:54.863 [ http-nio-8080-exec-8 ] - [ INFO  ] [ com.example.demo.controller.SwaggerController : 21 ] - 输入的numb是22
+2023-02-07 20:42:31.476 [ main ] - [ INFO  ] [ com.example.demo.CatManagerApplication : 55 ] - Starting CatManagerApplication using Java 1.8.0_281 on majihong with PID 26632 (F:\code\CatManager\target\classes started by majihong in F:\code\CatManager)
+2023-02-07 20:42:31.482 [ main ] - [ INFO  ] [ com.example.demo.CatManagerApplication : 640 ] - No active profile set, falling back to 1 default profile: "default"
+2023-02-07 20:42:32.440 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2023-02-07 20:42:32.895 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 108 ] - Tomcat initialized with port(s): 8080 (http)
+2023-02-07 20:42:32.904 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2023-02-07 20:42:32.904 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-02-07 20:42:33.072 [ main ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2023-02-07 20:42:33.072 [ main ] - [ INFO  ] [ o.s.b.w.s.c.ServletWebServerApplicationContext : 290 ] - Root WebApplicationContext: initialization completed in 1533 ms
+2023-02-07 20:42:34.038 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 220 ] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-07 20:42:34.189 [ main ] - [ INFO  ] [ com.example.demo.CatManagerApplication : 61 ] - Started CatManagerApplication in 3.722 seconds (JVM running for 5.241)
+2023-02-07 20:42:42.033 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-07 20:42:42.034 [ http-nio-8080-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 525 ] - Initializing Servlet 'dispatcherServlet'
+2023-02-07 20:42:42.035 [ http-nio-8080-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 547 ] - Completed initialization in 1 ms
+2023-02-07 20:43:48.586 [ http-nio-8080-exec-4 ] - [ INFO  ] [ com.example.demo.controller.SwaggerController : 21 ] - 输入的numb是1
+2023-02-07 20:43:51.708 [ http-nio-8080-exec-2 ] - [ INFO  ] [ com.example.demo.controller.SwaggerController : 21 ] - 输入的numb是111
+2023-02-07 20:44:53.975 [ main ] - [ INFO  ] [ com.example.demo.CatManagerApplication : 55 ] - Starting CatManagerApplication using Java 1.8.0_281 on majihong with PID 22236 (F:\code\CatManager\target\classes started by majihong in F:\code\CatManager)
+2023-02-07 20:44:53.979 [ main ] - [ INFO  ] [ com.example.demo.CatManagerApplication : 640 ] - No active profile set, falling back to 1 default profile: "default"
+2023-02-07 20:44:54.903 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2023-02-07 20:44:55.325 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 108 ] - Tomcat initialized with port(s): 8080 (http)
+2023-02-07 20:44:55.337 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2023-02-07 20:44:55.338 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-02-07 20:44:55.507 [ main ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2023-02-07 20:44:55.508 [ main ] - [ INFO  ] [ o.s.b.w.s.c.ServletWebServerApplicationContext : 290 ] - Root WebApplicationContext: initialization completed in 1470 ms
+2023-02-07 20:44:56.515 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 220 ] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-07 20:44:56.673 [ main ] - [ INFO  ] [ com.example.demo.CatManagerApplication : 61 ] - Started CatManagerApplication in 3.544 seconds (JVM running for 4.736)
+2023-02-07 20:45:10.855 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-07 20:45:10.855 [ http-nio-8080-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 525 ] - Initializing Servlet 'dispatcherServlet'
+2023-02-07 20:45:10.857 [ http-nio-8080-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 547 ] - Completed initialization in 1 ms
+2023-02-07 20:52:15.974 [ main ] - [ INFO  ] [ com.example.demo.CatManagerApplication : 55 ] - Starting CatManagerApplication using Java 1.8.0_281 on majihong with PID 31056 (F:\code\CatManager\target\classes started by majihong in F:\code\CatManager)
+2023-02-07 20:52:15.979 [ main ] - [ INFO  ] [ com.example.demo.CatManagerApplication : 640 ] - No active profile set, falling back to 1 default profile: "default"
+2023-02-07 20:52:17.075 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2023-02-07 20:52:17.556 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 108 ] - Tomcat initialized with port(s): 8080 (http)
+2023-02-07 20:52:17.565 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2023-02-07 20:52:17.565 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-02-07 20:52:17.740 [ main ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2023-02-07 20:52:17.741 [ main ] - [ INFO  ] [ o.s.b.w.s.c.ServletWebServerApplicationContext : 290 ] - Root WebApplicationContext: initialization completed in 1704 ms
+2023-02-07 20:52:18.597 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 220 ] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-07 20:52:18.748 [ main ] - [ INFO  ] [ com.example.demo.CatManagerApplication : 61 ] - Started CatManagerApplication in 3.638 seconds (JVM running for 4.917)
+2023-02-07 20:52:31.593 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-07 20:52:31.593 [ http-nio-8080-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 525 ] - Initializing Servlet 'dispatcherServlet'
+2023-02-07 20:52:31.594 [ http-nio-8080-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 547 ] - Completed initialization in 1 ms
+2023-02-07 20:52:39.686 [ http-nio-8080-exec-6 ] - [ INFO  ] [ com.example.demo.controller.SwaggerController : 21 ] - 输入的numb是200
+2023-02-07 20:52:42.586 [ http-nio-8080-exec-8 ] - [ INFO  ] [ com.example.demo.controller.SwaggerController : 21 ] - 输入的numb是10

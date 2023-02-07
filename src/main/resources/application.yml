@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    type: com.mysql.cj.jdbc.MysqlDataSource
+    username: How2Java
+    password: How2,Java
+    url: jdbc:mysql://114.55.7.29:3306/codingmore?characterEncoding=UTF-8
+  mvc:
+    path match:
+      matching-strategy: ANT_PATH_MATCHER
+  # 自定义类 ignoreConfig，URL 的白名单
+  secure:
+    ignored:
+      urls: #安全路径白名单
+        - /doc.html
+        - /swagger-ui/**
+        - /swagger/**
+        - /swagger-resources/**
+        - /**/v3/api-docs
+        - /**/*.js
+        - /**/*.css
+        - /**/*.png
+        - /**/*.ico
+        - /webjars/springfox-swagger-ui/**
+        - /actuator/**
+        - /druid/**
+        - /users/login
+        - /users/register
+        - /users/info
+        - /users/logout
+        - /minio/upload
