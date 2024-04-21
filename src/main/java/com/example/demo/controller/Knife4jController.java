@@ -14,5 +14,4 @@ public class Knife4jController {
         public String test() {
             return "新的测试开始了，测Knife4j";
         }
-
     }
